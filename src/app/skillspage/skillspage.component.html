@@ -1,0 +1,25 @@
+<div>
+  <div class="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+    <p class="py-4 uppercase text-xl tracking-widest text-blue-600">Skills</p>
+    <h2 class="dark:text-white py-4">What can I do</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 p-6">
+      <div
+        class="dark:shadow-gray-950 p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+        *ngFor="let skill of skills"
+      >
+        <div class="grid grid-cols-2 gap-4 justify-between items-center w-fit">
+          <div class="m-auto">
+            <img
+              src="{{ skill.image }}"
+              alt="{{ skill.title }}"
+              class="w-[64px] h-[64px]"
+            />
+          </div>
+          <div class="flex flex-col items-center justify-center dark:text-white">
+            <h3>{{ skill.title }}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

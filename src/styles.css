@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+  li {
+    @apply cursor-pointer;
+  }
+  button {
+    @apply shadow-xl dark:shadow-gray-800 shadow-gray-300 rounded-xl uppercase bg-gradient-to-r from-blue-700 to-blue-500 text-white;
+  }
+}
